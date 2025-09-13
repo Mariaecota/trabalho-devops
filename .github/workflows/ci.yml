@@ -19,3 +19,5 @@ jobs:
 
       - name: Test Python Script
         run: python -m py_compile codificador.py
+
+        #teste
