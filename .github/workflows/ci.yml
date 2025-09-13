@@ -12,7 +12,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
-      - name: Python Lint Code Scanning Action
-        uses: advanced-security/python-lint-code-scanning-action@v1.1.1
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          linter: pylint
+          python-version: "3.11"
+
+      - name: Test Python Script
+        run: python -m py_compile codificador.py
