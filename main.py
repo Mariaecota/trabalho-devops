@@ -1,6 +1,4 @@
-# fast
 
-#<<<<<<< alteração-endpoint
 #def somar(a, b):
 #    return a + b
 
@@ -12,3 +10,4 @@
 #=======
 #hellow wordffgfg
 #>>>>>>> main
+
