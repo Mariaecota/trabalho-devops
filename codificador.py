@@ -1,3 +1,5 @@
+#
+# TESTE FINAL? 
 def codificar(senha):
     # codifica invertendo a string + um deslocamento simples de caractere
     return "".join([chr(ord(c)+2) for c in senha[::-1]])
