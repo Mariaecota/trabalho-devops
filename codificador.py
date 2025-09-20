@@ -1,10 +1,10 @@
 
 def codificar(senha):
-    # codifica invertendo a string + um deslocamento simples de caractere
+    # inverte a palavra e depois move 2 casas pra frente
     return "".join([chr(ord(c)+2) for c in senha[::-1]])
 
 def decodificar(token):
-    # decodifica revertendo o processo
+    # revertendo o processo
     return "".join([chr(ord(c)-2) for c in token])[::-1]
 
 def main():

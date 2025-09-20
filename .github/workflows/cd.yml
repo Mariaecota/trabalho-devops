@@ -29,13 +29,3 @@ jobs:
           name: projetozipado.zip
       - name: Display structure of downloaded files
         run: ls -R
-
-  discord:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Run Discord Webhook
-      uses: Sniddl/discord-commits@v1.6
-      with:
-        webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
